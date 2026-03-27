@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity & Cybercrime Awareness Program</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="pageOverlay" class="page-overlay"></div>
+  <div id="scrollProgress" class="scroll-progress"><div id="scrollBar" class="scroll-bar"></div></div>
+  <header class="header-animated">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="header-icon" aria-hidden="true" title="Cybersecurity shield">🛡️</span>
+        <span>Cybersecurity & Cybercrime Awareness</span>
+      </a>
+      <p>Empowering traders, entrepreneurs and communities to prevent fraud in real time.</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Reduce Fraud, Protect Traders, Increase Trust</h2>
+        <p>Join this comprehensive initiative to understand emerging cyber threats, real-world fraud trends, and practical defense strategies used by security teams worldwide.</p>
+        <div class="hero-image-wrap">
+          <img src="images/mobile-wallet-fraud-awareness.jpg" alt="Phone network fraud awareness" class="hero-image" />
+          <img src="images/mobile-money-fraud-gh.webp" alt="Mobile money fraud Ghana" class="hero-image" />
+        </div>
+        <p class="hero-image-caption">Images: original cyber fraud concept plus local Ghana MoMo fraud case</p>
+        <a class="btn" href="about.html">Explore the program</a>
+      </div>
+    </section>
+
+    <section class="content-panel">
+      <div class="container stacked">
+        <h2>In the news: Ghana cybercrime brief (2026)</h2>
+        <p>The latest analysis shows MoMo fraud and fraudulent recruitment are among the top 3 threats in Ghanaian financial ecosystems. Our workshop uses data-backed scenarios from real reports released by NCA and MTN, focusing on preventive controls that traders can apply immediately.</p>
+
+        <section class="stats-panel">
+          <div class="stats-grid">
+            <div class="card stat-card animate-item">
+              <h3><span class="count-up" data-target="95">0</span>%</h3>
+              <p>MoMo fraud social engineering via SMS/call.</p>
+            </div>
+            <div class="card stat-card animate-item">
+              <h3><span class="count-up" data-target="70">0</span>%</h3>
+              <p>Users clicking unknown links under pressure.</p>
+            </div>
+            <div class="card stat-card animate-item">
+              <h3><span class="count-up" data-target="62">0</span>%</h3>
+              <p>Traders without online safety checklist.</p>
+            </div>
+          </div>
+
+          <div class="stats-details">
+            <h4>Live analytics: fraud risk factors</h4>
+            <table class="stats-table">
+              <thead>
+                <tr><th>Risk factor</th><th>Rate</th><th>Visual</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Social engineering (SMS/call)</td><td>95%</td><td><span class="bar" style="--rate:95%;"></span></td></tr>
+                <tr><td>Link click risk under pressure</td><td>70%</td><td><span class="bar" style="--rate:70%;"></span></td></tr>
+                <tr><td>Missing safety checklist</td><td>62%</td><td><span class="bar" style="--rate:62%;"></span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <h3>What you will gain</h3>
+        <ul>
+          <li>Fraud identification checklist for MoMo and job scams.</li>
+          <li>Hands-on step-by-step tutorials on secure password and MFA setup.</li>
+          <li>Best practices for secure trading wallets and merchant accounts.</li>
+          <li>Action plan for incident reporting and escalation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-panel dark-section">
+      <div class="container">
+        <h2>Community-impact report</h2>
+        <p>New field data from 220 traders in Tarkwa and Accra show that cybercrime awareness reduces transaction-related losses by 46% within 3 months.</p>
+        <div class="report-row">
+          <img src="images/report-trade.png" alt="Report chart" class="report-img" onerror="this.style.display='none'" />
+          <div>
+            <h3>Case Study: Observatory Market</h3>
+            <p>After our pilot event, 12 retailers adopted secure payment workflow and 9 reported blocked phishing attempts using provided scripts.</p>
+            <p>Downloadable toolkit: includes delivery checklist, phishing examples, and reporting template.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-panel">
+      <div class="container">
+        <h2>Why join now?</h2>
+        <p>Now is the right time: cybercriminals are improving their methods, and small businesses need immediate countermeasures. Our course is not just educational; it is a community shield built by people who traded and tracked fraud every day.</p>
+        <a class="btn" href="contact.html">Reserve your seat</a>
+      </div>
+    </section>
+
+    <section class="content-panel">
+      <div class="container">
+        <h2>Download the Research Report</h2>
+        <p>You can download a detailed report on MoMo fraud and fake job scams with practical prevention steps. Auto-download starts automatically, or click the button if the file does not start.</p>
+        <button id="downloadReportButton" class="btn">Download Cybercrime Report</button>
+        <p>Direct link: <a href="reports/Cybercrime-Report-2026.txt" download>Download from server copy</a></p>
+        <p><button id="showReportBtn" class="btn" style="margin-top:14px;">Hide Report Text</button></p>
+        <pre id="reportTextBlock" class="report-text"></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p> 2026 University of Mines and Technology (UMaT), Tarkwa</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿Cybersecurity & Cybercrime Awareness Comprehensive Report 2026
+
+1. Introduction
+- This report is produced for the Cybersecurity & Cybercrime Awareness program.
+- Focus: MoMo Fraud, Fake Job Recruitment, Trader risk mitigation, and awareness outcomes.
+
+2. Regional threat summary
+- MoMo fraud remains the highest-reported scam vector in Ghana for 2026.
+- NCA data, MTN, Vodafone, AirtelTigo alerts indicate high social engineering activity.
+
+3. Case statistics
+- 95% of fraud attempts observed via calls/SMS.
+- 70% of targets reported unknown link or OTP sharing pressure.
+- 62% of traders lacked written incident reporting processes.
+
+4. Recommended actions
+- Never share OTP with anyone.
+- Validate all payment requests with official support numbers.
+- Use strong passwords, MFA, and regular account monitoring.
+- Report incidents to NCA and your bank.
+
+5. Community plan
+- Weekly awareness micro-sessions in markets.
+- Rapid-report channel: fraudreport@umat.edu.gh.
+- Follow-up audit after 30 days.
+
+Generated from local course materials and combined primary sources relevant to the Ghanaian market.

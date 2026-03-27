@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-panel">
+    <div class="container">
+      <h2>Reach Out and Report</h2>
+      <p>We collect fraud reports, provide support, and offer a weekly action newsletter. Please provide as much detail as possible.</p>
+
+      <div class="contact-columns">
+        <div class="card">
+          <h3>Contact Information</h3>
+          <ul>
+            <li>Email: <a href="mailto:cyberaware@umat.edu.gh">cyberaware@umat.edu.gh</a></li>
+            <li>Phone: +233 24 123 4567</li>
+            <li>Office: UMaT Cybersecurity Lab, Tarkwa</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Reporting Guidance</h3>
+          <p>When reporting scams, include: date, platform, value, contact info used, screenshots (if available), and any names or number details.</p>
+          <p>We anonymize data and include aggregated results in follow-up events to improve local prevention.</p>
+        </div>
+      </div>
+
+      <div id="formMessage" class="form-message" aria-live="polite"></div>
+
+      <section class="card">
+        <h3>Submit a Fraud Incident</h3>
+        <form class="contact-form" id="fraudReportForm">
+          <label for="reportType">Type of Fraud</label>
+          <input type="text" id="reportType" name="reportType" placeholder="e.g., MoMo fraud, fake job" required>
+
+          <label for="reportAmount">Amount (GHS)</label>
+          <input type="text" id="reportAmount" name="reportAmount" placeholder="e.g., 250" required>
+
+          <label for="reportLocation">Location</label>
+          <input type="text" id="reportLocation" name="reportLocation" placeholder="Market, city, etc.">
+
+          <label for="reportPlatform">Platform/Channel</label>
+          <input type="text" id="reportPlatform" name="reportPlatform" placeholder="MoMo, Facebook, WhatsApp">
+
+          <label for="reportDetails">Details</label>
+          <textarea id="reportDetails" name="reportDetails" rows="4" placeholder="Describe what happened" required></textarea>
+
+          <div class="form-note">After submission, the entry is stored locally and listed below. This is for demo and local tracking only.</div>
+          <button type="submit" class="btn">Save Fraud Incident</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h3>Submitted Fraud Reports</h3>
+        <table class="fraud-table" id="fraudReportsTable">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Location</th>
+              <th>Platform</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="6">Loading reports...</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card">
+        <h3>General Contact Form</h3>
+        <form class="contact-form" onsubmit="return validateForm()" id="contactForm">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Your message or question" required></textarea>
+
+          <div class="form-note">Recommend including transaction ID and platform for faster follow-up.</div>
+
+          <button type="submit" class="btn">Send Contact Message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p> 2026 University of Mines and Technology (UMaT), Tarkwa</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,8 +1,13 @@
-# Task: Add Cyber Awareness Location Images to Gallery
+# Task: Rearrange team.html to put Dartey Micheal Amoah first
 
-## Steps:
-- [x] Step 1: Convert HEIC images to JPG and rename to cyber-themed names.
-- [x] Step 2: Update gallery.html with responsive gallery grid using existing images + placeholders for new ones (cyber-event-location1-4.jpg).
-- [x] Step 3: Test the gallery page.
+## Plan Breakdown:
+- Step 1: Move Dartey Micheal Amoah's .team-card to first in .profile-grid.
+- Step 2: Verify order.
+- Step 3: Test page.
 
-**Status: All steps complete**. Only the top 2 images (direct images/ root) show due to browser caching/broken image placeholders. Added more images to gallery/. Run `start gallery.html` and hard refresh (Ctrl+F5) or clear browser cache. All JPG/WebP files work with .jpg or .JPG extension.
+## Progress:
+- [x] Step 1: Moved Dartey to first ✓
+- [x] Step 2: Verified ✓
+- [x] Step 3: Tested ✓
+
+**Task complete.**

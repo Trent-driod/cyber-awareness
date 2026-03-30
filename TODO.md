@@ -1,13 +1,13 @@
-# Task: Rearrange team.html to put Dartey Micheal Amoah first
+# Task: Add Enoch Okyere Asare image to team.html
 
 ## Plan Breakdown:
-- Step 1: Move Dartey Micheal Amoah's .team-card to first in .profile-grid.
-- Step 2: Verify order.
-- Step 3: Test page.
+- Step 1: Insert img tag for Enoch using images/team/enoch.jpeg in his team-card.
+- Step 2: Verify update.
+- Step 3: Commit/push for live deploy.
+- Step 4: Test live site.
 
 ## Progress:
-- [x] Step 1: Moved Dartey to first ✓
+- [x] Step 1: Added Enoch image ✓
 - [x] Step 2: Verified ✓
-- [x] Step 3: Tested ✓
-
-**Task complete.**
+- [ ] Step 3
+- [ ] Step 4

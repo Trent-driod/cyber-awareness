@@ -2,14 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gallery</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Awareness Gallery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><h1>Gallery</h1></header>
-<main>
-  <p>Photos and videos will be uploaded here after the event.</p>
-</main>
-<footer><p>© 2026 Cybersecurity Awareness Program</p></footer>
+  <div id="pageOverlay" class="page-overlay"></div>
+  <div id="scrollProgress" class="scroll-progress"><div id="scrollBar" class="scroll-bar"></div></div>
+  <header class="header-animated">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="header-icon" aria-hidden="true" title="Cybersecurity shield">🛡️</span>
+        <span>Cybersecurity & Cybercrime Awareness</span>
+      </a>
+      <p>Empowering traders, entrepreneurs and communities to prevent fraud in real time.</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="gallery-section container">
+      <h2>Cyber Awareness Gallery</h2>
+      <p class="gallery-intro">Explore highlights from our recent cyber awareness events and training sessions.</p>
+      <div class="gallery-grid">
+        <figure class="gallery-item animate-item"><img src="images/gallery/event6.jpg" alt="Venue exterior" loading="lazy"><figcaption class="gallery-caption">UMaT Tarkwa Venue</figcaption></figure>
+        <figure class="gallery-item animate-item"><img src="images/gallery/event7.jpg" alt="Community engagement" loading="lazy"><figcaption class="gallery-caption">Community Engagement Session</figcaption></figure>
+        <figure class="gallery-item animate-item"><img src="images/gallery/mobile-wallet-fraud.jpg" alt="Mobile wallet fraud awareness session" loading="lazy"><figcaption class="gallery-caption">Mobile Wallet Fraud Awareness Session</figcaption></figure>
+        <figure class="gallery-item animate-item"><img src="images/gallery/mobile-money-fraud.webp" alt="MoMo fraud prevention demo" loading="lazy"><figcaption class="gallery-caption">MoMo Fraud Prevention Demo - Ghana Context</figcaption></figure>
+        <figure class="gallery-item animate-item"><img src="images/gallery/WhatsApp Image 2026-03-30 at 2.19.2.jpg" alt="Workshop photo A" loading="lazy"><figcaption class="gallery-caption">Workshop Photo A</figcaption></figure>
+        <figure class="gallery-item animate-item"><img src="images/gallery/WhatsApp Image 2026-03-30 at 2.19.22 PM.jpg" alt="Workshop photo B" loading="lazy"><figcaption class="gallery-caption">Workshop Photo B</figcaption></figure>
+        <figure class="gallery-item animate-item"><img src="images/gallery/WhatsApp Image at 2.19.22 PM.jpg" alt="Workshop photo C" loading="lazy"><figcaption class="gallery-caption">Workshop Photo C</figcaption></figure>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container"><p>2026 University of Mines and Technology (UMaT), Tarkwa</p></div></footer>
+  <div id="lightboxOverlay" class="lightbox-overlay hidden" aria-hidden="true" role="dialog" aria-label="Image preview"><button id="lightboxClose" class="lightbox-close" aria-label="Close overlay">×</button><img id="lightboxImage" class="lightbox-image" src="" alt="" /><p id="lightboxCaption" class="lightbox-caption"></p></div>
+  <script src="script.js"></script>
 </body>
 </html>

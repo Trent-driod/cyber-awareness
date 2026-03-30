@@ -210,6 +210,81 @@ function setupScrollAnimations() {
   items.forEach((item) => observer.observe(item));
 }
 
+function setupLightbox() {
+  const overlay = document.getElementById('lightboxOverlay');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const closeBtn = document.getElementById('lightboxClose');
+
+  if (!overlay || !lightboxImage || !lightboxCaption || !closeBtn) return;
+
+  const closeLightbox = () => {
+    overlay.classList.add('hidden');
+    overlay.setAttribute('aria-hidden', 'true');
+    lightboxImage.src = '';
+  };
+
+  const fallbackImage = 'data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="450" height="300" viewBox="0 0 450 300"%3E%3Crect width="450" height="300" fill="%231a253f"/%3E%3Ctext x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23a1dfff" font-family="Segoe UI,Arial,sans-serif" font-size="20"%3EImage unavailable%3C/text%3E%3C/svg%3E';
+
+  document.querySelectorAll('.gallery-item img').forEach((img) => {
+    img.onerror = () => {
+      const fallbackPaths = [];
+      const imageSrc = img.src;
+      const imageName = imageSrc.split('/').pop();
+
+      if (img.dataset.altSrc) {
+        const altSources = img.dataset.altSrc.split(',').map(s => s.trim()).filter(Boolean);
+        fallbackPaths.push(...altSources);
+      }
+
+      if (imageSrc.includes('/gallery/')) {
+        fallbackPaths.push(imageSrc.replace('/gallery/', '/'));
+        fallbackPaths.push(imageSrc.replace('/gallery/', '/gallery-event')); // e.g., /gallery/gallery-event1.jpg
+      }
+
+      if (imageSrc.includes('/gallery-event')) {
+        fallbackPaths.push(imageSrc.replace('/gallery-event', '/event'));
+      }
+
+      if (!imageName.startsWith('gallery-event') && !imageName.startsWith('event')) {
+        fallbackPaths.push(`images/gallery/gallery-${imageName}`);
+        fallbackPaths.push(`images/${imageName}`);
+      }
+
+      const currentFallback = img.dataset.fallbackStep ? Number(img.dataset.fallbackStep) : 0;
+      if (currentFallback < fallbackPaths.length) {
+        img.dataset.fallbackStep = String(currentFallback + 1);
+        img.src = fallbackPaths[currentFallback];
+        return;
+      }
+
+      img.src = fallbackImage;
+      img.alt = 'Image could not be loaded';
+    };
+
+    img.addEventListener('click', () => {
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt || 'Gallery image';
+      lightboxCaption.textContent = img.closest('figure')?.querySelector('.gallery-caption')?.textContent || '';
+      overlay.classList.remove('hidden');
+      overlay.removeAttribute('aria-hidden');
+    });
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', (event) => {
+    if (event.target === overlay || event.target === closeBtn) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeLightbox();
+    }
+  });
+}
+
 window.addEventListener('scroll', updateScrollProgress);
 
 window.addEventListener('load', () => {
@@ -223,11 +298,12 @@ window.addEventListener('load', () => {
   setupScrollAnimations();
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
   console.log('Cyber Awareness script: DOM loaded');
   setupPageTransitions();
   setupDownloadLinks();
   setupFraudForm();
   renderFraudReports();
+  setupLightbox();
   updateScrollProgress();
 });

@@ -1,19 +1,12 @@
-# Cyber Awareness Website Improvement TODO
+# Cyber Awareness Theme Update - Minimal Modern Theme
+Status: ✅ Nearly Complete
 
-## Task Summary
-- Make website less "dull" (enhance visual appeal in style.css).
-- Update resources.html to LinkedIn-style scenarios with real-world cases.
-- Site-wide polish applied.
+## Steps:
+- [x] 1. Create this TODO.md with plan breakdown
+- [x] 2. Backup current style.css (as style.css.backup)
+- [x] 3. Implement color replacements in style.css (Electric Blue #3B82F6 primary, Charcoal #0F172A headers, white bgs #F8FAFC)
+- [x] 4. Update gradients, shadows, contrasts for light theme readability
+- [ ] 5. Test by opening index.html in browser
+- [ ] 6. Complete task
 
-## Completed Steps
-- [x] 1. User approved plan.
-- [x] 2. Updated resources.html (Ghana MoMo, Twitter BTC, Carbanak, Equifax, fake jobs).
-- [x] 3. Enhanced style.css (LinkedIn blues, card hovers).
-
-## Pending Steps
-- [ ] 4. Add resources teaser to index.html.
-- [ ] 5. Test.
-- [ ] 6. Complete.
-
-Updated 2026.
-
+Current: Theme fully implemented in style.css. Testing next.

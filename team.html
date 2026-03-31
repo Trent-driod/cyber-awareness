@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team Members</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .team-card a {
+      color: #0a66c2; /* LinkedIn blue */
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .team-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -42,36 +52,46 @@
           <h3>Dartey Micheal Amoah</h3>
           <p><strong>Role:</strong> Website Lead</p>
           <p>Builds and maintains the event website, online resources, and final report compilation.</p>
+<a href="https://www.linkedin.com/posts/michael-dartey-b63208358_cybersecurity-cybercrimeawareness-communityoutreach-ugcPost-7444643551272964096-ncDd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFkFFHsBliyY4DLjiyaMR5DzXwwPK4ATaUI" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">View LinkedIn Profile</a>
         </div>
+
         <div class="card team-card">
           <img src="images/team/osei_kwame.jpeg?v=2" alt="Osei Shadrack Kwame" class="team-avatar" loading="lazy" onerror="this.src='images/gallery/event6.jpg'">
           <h3>Osei Shadrack Kwame</h3>
           <p><strong>Role:</strong> Leader / Coordinator</p>
           <p>Responsible for project direction, communication, and coordination with partners.</p>
+          <p><a href="https://www.linkedin.com/posts/shadrack-osei-3379393a7_cybersecurity-cybercrimeawareness-communityoutreach-activity-7444197829142589440-S0IT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGOgzZsB5xTzVY0yDijAiEHLGYWt13AZFs4" target="_blank" rel="noopener noreferrer">View LinkedIn Profile</a></p>
         </div>
+
         <div class="card team-card">
           <img src="images/team/joseph.jpeg?v=2" alt="Joseph Eduafo" class="team-avatar" loading="lazy" onerror="this.src='images/gallery/event6.jpg'">
           <h3>Joseph Eduafo</h3>
           <p><strong>Role:</strong> Content Developer</p>
           <p>Designs modules, slides, and learning materials with threat intelligence and real case studies.</p>
-          <p>Dartey Micheal Amoah is the Website Lead, bringing this site to life.</p>
+          <p><a href="https://www.linkedin.com/in/joseph-eduafo-337284364?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">View LinkedIn Profile</a></p>
         </div>
+
         <div class="card team-card">
           <img src="images/team/enoch.jpeg?v=2" alt="Enoch Okyere Asare" class="team-avatar" loading="lazy" onerror="this.src='images/gallery/event6.jpg'">
           <h3>Enoch Okyere Asare</h3>
           <p><strong>Role:</strong> Technical Demonstrator</p>
           <p>Presents practical demos on password managers, MFA, secure device setup and live incident simulations.</p>
+          <p><a href="https://www.linkedin.com/posts/enoch-okyere-030817312_victim-of-fraudsters-shares-his-experience-ugcPost-7444687500461330432-d26s?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE9_wGQBhvM8GJ34iOPs8eOHrhvd9357tBE" target="_blank" rel="noopener noreferrer">View LinkedIn Profile</a></p>
         </div>
+
         <div class="card team-card">
           <img src="images/team/stefan.jpeg?v=2" alt="Stefan Kuranchie" class="team-avatar" loading="lazy" onerror="this.src='images/gallery/event6.jpg'">
           <h3>Stefan Kuranchie</h3>
           <p><strong>Role:</strong> Logistics Manager</p>
           <p>Handles venue setup, equipment, permits and participant management.</p>
+          <p><a href="https://www.linkedin.com/in/stefan-kuranchie-54621a32b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">View LinkedIn Profile</a></p>
         </div>
+
         <div class="card team-card">
           <h3>Arthur Fosu Samuel</h3>
           <p><strong>Role:</strong> Media Lead</p>
           <p>Manages event photography, posters, social media, and awareness campaign distribution.</p>
+          <p><a href="https://www.linkedin.com/posts/samuel-arthur-fosu-19b21b3bb_common-momo-scams-wrong-transfer-trick-share-7444486664158195712-9KxI?utm_source=social_share_send&utm_medium=ios_app&rcm=ACoAAGZepEcBkAF2foj2ufJOUea38V951JFoEFU&utm_campaign=copy_link" target="_blank" rel="noopener noreferrer">View LinkedIn Profile</a></p>
         </div>
       </div>
 
@@ -86,5 +106,14 @@
     </div>
   </footer>
   <script src="script.js"></script>
+
+  <script>
+    // Fix blank page when using browser Back button
+    window.addEventListener("pageshow", function(event) {
+      if (event.persisted) {
+        window.location.reload();
+      }
+    });
+  </script>
 </body>
 </html>

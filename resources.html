@@ -6,16 +6,7 @@
   <title>Real-World Scenarios | Cybersecurity & Cybercrime Awareness</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .linkedin-card { background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%); border: 1px solid #0d66c2; border-radius: 12px; margin-bottom: 20px; overflow: hidden; transition: box-shadow 0.3s ease, transform 0.3s ease; }
-    .linkedin-card:hover { box-shadow: 0 8px 25px rgba(13, 102, 194, 0.3); transform: translateY(-2px); }
-    .scenario-header { background: linear-gradient(90deg, #0d66c2, #1d4ed8); color: white; padding: 16px 20px; font-weight: 600; }
-    .scenario-body { padding: 20px; }
-    .scenario-title { color: #0d66c2; font-size: 1.3em; margin: 0 0 10px; }
-    .scenario-impact { background: #0f1419; padding: 12px; border-left: 4px solid #0d66c2; margin: 12px 0; }
-    .lessons-list { list-style: none; padding: 0; }
-    .lessons-list li { padding: 8px 0; border-bottom: 1px solid #2a2a2a; }
-    .lesso
-    ns-list li:before { content: "✓ "; color: #10b981; font-weight: bold; }
+    /* Inline styles removed - using main style.css */
   </style>
 </head>
 <body>
@@ -44,127 +35,75 @@
   </header>
 
   <main>
-    <section class="hero" style="padding: 80px 16px; position: relative;">
-      <div class="container">
-        <h2>🚀 Real-World Cybercrime Scenarios <span>that Hackers Don't Want You to Know</span></h2>
-        <p>Interactive learning from global heists &amp; local scams. Hover for glitch effects—fun way to master defense!</p>
-      </div>
-    </section>
-
-
-<section class="content-panel">
-      <div class="container">
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
-          <div class="stat-card">
-            <h4>Fraud Checklist</h4>
-            <p>MoMo and job scam identification for traders</p>
-          </div>
-          <div class="stat-card">
-            <h4>MFA Setup</h4>
-            <p>Step-by-step secure password & 2FA tutorials</p>
-          </div>
-          <div class="stat-card">
-            <img src="images/african-women-shopping-food-stuff-local-market-paying-doing-mobile-transfer-via-phone-trader-african-woman-shopping-166608929.webp" alt="Traders using mobile payment" style="width:100%; border-radius:12px; margin-bottom:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
-            <h4>Reporting Guide</h4>
-            <p>Incident escalation and NCA reporting process</p>
-          </div>
+    <section class="container" style="padding: 4rem 0;">
+      <h1 style="text-align: center; color: #1E3A8A; margin-bottom: 3rem;">Real-World Cyber Scenarios & Defense Guide</h1>
+      
+      <div class="linkedin-card">
+        <div class="scenario-header">
+          🚨 MoMo Fraud - Fake Reversal Call
         </div>
-        <p>Watch particles dance while you learn. Each card reveals pro tips.</p>
+        <div class="scenario-body">
+          <h2 class="scenario-title">Scenario: "Your agent reversal failed, send OTP to fix"</h2>
+          <p>Scammer calls pretending to be MTN/Vodafone agent. Claims transaction reversal error, asks for phone number or OTP to "complete refund".</p>
+          
+          <div class="scenario-impact">
+            <strong>Real Impact:</strong> ₵2,300 average loss per incident. 95% of MoMo fraud uses social engineering.
+          </div>
+          
+          <ul class="lessons-list">
+            <li>Real agents NEVER ask for OTP over phone</li>
+            <li>Check balance/log in app directly before responding</li>
+            <li>Save official helplines: MTN 100, Vodafone 111</li>
+          </ul>
+          
+          <p><strong><a href="tel:+233550000000" style="color: #10b981;">Call 111 NCA now</a> if targeted</strong></p>
+        </div>
+      </div>
 
+      <div class="linkedin-card">
+        <div class="scenario-header">
+          📧 Phishing - Fake Job Offer
+        </div>
+        <div class="scenario-body">
+          <h2 class="scenario-title">Scenario: "Job offer - pay ₵200 processing fee via MoMo"</h2>
+          <p>WhatsApp message offers overseas job. Asks for "registration fee" or bank details to "process documents". Links to fake site stealing info.</p>
+          
+          <div class="scenario-impact">
+            <strong>Real Impact:</strong> Ghana recorded 14,000+ job scam complaints in 2025.
+          </div>
+          
+          <ul class="lessons-list">
+            <li>No legitimate job asks for payment upfront</li>
+            <li>Verify company on official website (not WhatsApp link)</li>
+            <li>Enable 2FA on WhatsApp/Email before sharing</li>
+          </ul>
+          
+          <p><strong>Action: Forward scam message to NCA (111 or report@nca.gov.gh)</strong></p>
+        </div>
+      </div>
 
-
-
-        <article class="linkedin-card animate-item">
-          <div class="scenario-header">
-            <strong>Ghana MoMo Fraud (2023-2026)</strong> - Local Mobile Money Scams
+      <div class="linkedin-card">
+        <div class="scenario-header">
+          ⚠️ Incident Response - What To Do NOW
+        </div>
+        <div class="scenario-body">
+          <h2 class="scenario-title">Immediate Steps If Compromised</h2>
+          <p>Your account shows unauthorized transactions or suspicious login.</p>
+          
+          <div class="scenario-impact">
+            <strong>48-Hour Window:</strong> Quick action recovers 62% of funds vs 12% after delay.
           </div>
-          <div class="scenario-body">
-            <p>Criminals pose as MTN/Vodafone agents, claiming account issues and requesting OTPs via SMS/calls. Victims lose GHS 500-5000 instantly.</p>
-            <div class="scenario-impact">
-              <strong>Impact:</strong> NCA reports 100k+ cases yearly; traders lose daily revenue.
-            </div>
-            <ul class="lessons-list">
-              <li>Never share OTP—banks never ask.</li>
-              <li>Verify via official app only.</li>
-              <li>Report to 111 immediately.</li>
-            </ul>
+          
+          <ul class="lessons-list">
+            <li>Freeze account: MTN *170# > 0 > 4, Vodafone *110# > 8</li>
+            <li>Report to bank/telco + NCA 111 within 1 hour</li>
+            <li>Change passwords from SAFE device</li>
+            <li>Scan phone: Download official antivirus</li>
+          </ul>
+          
+          <div style="margin-top: 1rem;">
+            <a href="reports/Cybercrime-Report-2026.txt" class="btn" download>📥 Download Response Checklist</a>
           </div>
-        </article>
-
-        <article class="linkedin-card animate-item">
-          <div class="scenario-header">
-            <strong>Twitter Bitcoin Scam (2020)</strong> - High-Profile Phishing
-          </div>
-          <div class="scenario-body">
-            <p>Hackers compromised verified accounts (Obama, Musk) to promote BTC giveaway scam. $120k stolen in hours.</p>
-            <div class="scenario-impact">
-              <strong>Impact:</strong> Eroded platform trust; users lost $100-10k each.
-            </div>
-            <ul class="lessons-list">
-              <li>Enable 2FA everywhere.</li>
-              <li>Suspicious links? Check URL manually.</li>
-              <li>"Too good to be true" = scam.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="linkedin-card animate-item">
-          <div class="scenario-header">
-            <strong>Carbanak Gang (2013-2018)</strong> - Banking Trojan Heist
-          </div>
-          <div class="scenario-body">
-            <p>Malware infected bank employee PCs, allowing $1B theft via fake transfers/video manipulation.</p>
-            <div class="scenario-impact">
-              <strong>Impact:</strong> 30+ banks hit; avg $10M loss per target.
-            </div>
-            <ul class="lessons-list">
-              <li>Use antivirus + email filters.</li>
-              <li>Verify large transfers in person.</li>
-              <li>Train staff on phishing.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="linkedin-card animate-item">
-          <div class="scenario-header">
-            <strong>Equifax Breach (2017)</strong> - Data Exposure
-          </div>
-          <div class="scenario-body">
-            <p>Hackers stole 147M personal records (SSN, cards) due to unpatched software.</p>
-            <div class="scenario-impact">
-              <strong>Impact:</strong> $700M fines; identity theft for years.
-            </div>
-            <ul class="lessons-list">
-              <li>Patch software weekly.</li>
-            <li>Freeze credit reports.</li>
-            <li>Monitor accounts daily.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="linkedin-card animate-item">
-          <div class="scenario-header">
-            <strong>Fake Job Scams (Ongoing)</strong> - Trader Targeting
-          </div>
-          <div class="scenario-body">
-            <p>Scammers offer "remote trader jobs" requiring upfront fees or wallet setup via fake sites.</p>
-            <div class="scenario-impact">
-              <strong>Impact:</strong> Ghana traders lose GHS 1000-10k upfront.
-            </div>
-            <ul class="lessons-list">
-              <li>No legit job asks for payment first.</li>
-              <li>Research company on official site.</li>
-              <li>Use reverse image search on "job ads".</li>
-            </ul>
-          </div>
-        </article>
-
-        <div class="card" style="text-align: center; margin-top: 30px;">
-          <h3>Download Toolkit</h3>
-          <p>PDF checklists, reporting templates, and more.</p>
-          <a href="reports/Cybercrime-Report-2026.txt" class="btn" download>Download Now</a>
-          <p><a href="contact.html">Report Suspicious Activity</a></p>
         </div>
       </div>
     </section>
@@ -176,5 +115,14 @@
     </div>
   </footer>
   <script src="script.js"></script>
+
+  <script>
+    // Fix blank page when using browser Back button
+    window.addEventListener("pageshow", function(event) {
+      if (event.persisted) {
+        window.location.reload();
+      }
+    });
+  </script>
 </body>
 </html>

@@ -47,5 +47,14 @@
   <footer><div class="container"><p>2026 University of Mines and Technology (UMaT), Tarkwa</p></div></footer>
   <div id="lightboxOverlay" class="lightbox-overlay hidden" aria-hidden="true" role="dialog" aria-label="Image preview"><button id="lightboxClose" class="lightbox-close" aria-label="Close overlay">×</button><img id="lightboxImage" class="lightbox-image" src="" alt="" /><p id="lightboxCaption" class="lightbox-caption"></p></div>
   <script src="script.js"></script>
+
+  <script>
+    // Fix blank page when using browser Back button
+    window.addEventListener("pageshow", function(event) {
+      if (event.persisted) {
+        window.location.reload();
+      }
+    });
+  </script>
 </body>
 </html>

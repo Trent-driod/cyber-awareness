@@ -154,7 +154,6 @@ nav a:hover {
 
 .hero {
   background: url('images/hero-bg.jpg') center/cover;
-
   background-size: cover;
   background-position: center;
   color: white;
@@ -181,7 +180,6 @@ nav a:hover {
 
 .hero h2 {
   font-size: 3rem;
-
   color: #06B6D4;
   margin: 0 0 1rem;
 }
@@ -226,27 +224,6 @@ nav a:hover {
   color: white;
   font-size: 2.5rem;
   font-weight: bold;
-}
-
-.feature-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
-.feature-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 1rem;
-  background: linear-gradient(135deg, #06B6D4, #10B981);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 2rem;
 }
 
 #about {
@@ -350,68 +327,94 @@ footer {
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
-.gallery-preview .preview-card {
-  background: #FFFFFF;
-  border: 1px solid #E2E8F0;
+/* Resources scenario cards - dark LinkedIn-style for contrast */
+.linkedin-card {
+  background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+  border: 1px solid #0d66c2;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-bottom: 20px;
   overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: #f9fafb; /* default text color inside card */
 }
 
-.gallery-preview .preview-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  display: block;
+.linkedin-card:hover {
+  box-shadow: 0 8px 25px rgba(13, 102, 194, 0.3);
+  transform: translateY(-2px);
 }
 
-.gallery-preview .preview-overlay {
-  padding: 0.8rem 1rem;
-  text-align: center;
-  font-size: 0.95rem;
-  color: #1E293B;
-}
-
-.gallery-preview .preview-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-.gallery-preview .preview-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-}
-
-.gallery-preview .preview-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,0.8));
-  color: white;
-  padding: 1rem;
+.scenario-header {
+  background: linear-gradient(90deg, #0d66c2, #1d4ed8);
+  color: #ffffff; /* white text for contrast */
+  padding: 16px 20px;
   font-weight: 600;
+}
+
+.scenario-body {
+  padding: 20px;
+  color: #f9fafb; /* off-white text for readability */
+}
+
+.scenario-title {
+  color: #10b981; /* green accent for visibility */
+  font-size: 1.3em;
+  margin: 0 0 10px;
+}
+
+.scenario-impact {
+  background: #0f1419;
+  color: #ffffff; /* pure white text */
+  padding: 12px;
+  border-left: 4px solid #0d66c2;
+  margin: 12px 0;
+}
+
+.lessons-list {
+  list-style: none;
+  padding: 0;
+  color: #f9fafb; /* ensure lessons are visible */
+}
+
+.lessons-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.lessons-list li:before {
+  content: "✓ ";
+  color: #10b981;
+  font-weight: bold;
+}
+
+/* LinkedIn icon style */
+.linkedin-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-color: #0a66c2; /* LinkedIn blue */
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 18px;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.2rem;
-  padding: 1rem 0;
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
 .gallery-item {
-  background: #FFFFFF;
-  border: 1px solid #E2E8F0;
+  background: white;
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  margin: 0;
+  transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
@@ -423,39 +426,11 @@ footer {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
 }
 
 .gallery-caption {
-  padding: 0.8rem 1rem;
-  text-align: center;
+  padding: 1rem;
+  background: #F9FAFB;
   font-size: 0.95rem;
-  color: #1E293B;
+  color: #475569;
 }
-
-@media (max-width: 768px) {
-  .header-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .features {
-    grid-template-columns: 1fr;
-    padding: 2rem 1rem;
-  }
-
-  .hero {
-    padding: 3rem 1rem;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-}
-

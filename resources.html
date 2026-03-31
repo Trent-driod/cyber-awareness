@@ -3,8 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources | Cybersecurity & Cybercrime Awareness</title>
+  <title>Real-World Scenarios | Cybersecurity & Cybercrime Awareness</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .linkedin-card { background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%); border: 1px solid #0d66c2; border-radius: 12px; margin-bottom: 20px; overflow: hidden; transition: box-shadow 0.3s ease, transform 0.3s ease; }
+    .linkedin-card:hover { box-shadow: 0 8px 25px rgba(13, 102, 194, 0.3); transform: translateY(-2px); }
+    .scenario-header { background: linear-gradient(90deg, #0d66c2, #1d4ed8); color: white; padding: 16px 20px; font-weight: 600; }
+    .scenario-body { padding: 20px; }
+    .scenario-title { color: #0d66c2; font-size: 1.3em; margin: 0 0 10px; }
+    .scenario-impact { background: #0f1419; padding: 12px; border-left: 4px solid #0d66c2; margin: 12px 0; }
+    .lessons-list { list-style: none; padding: 0; }
+    .lessons-list li { padding: 8px 0; border-bottom: 1px solid #2a2a2a; }
+    .lessons-list li:before { content: "✓ "; color: #10b981; font-weight: bold; }
+  </style>
 </head>
 <body>
   <div id="pageOverlay" class="page-overlay"></div>
@@ -32,15 +43,107 @@
   </header>
 
   <main>
+    <section class="hero" style="padding: 80px 16px; position: relative;">
+      <div class="container">
+        <h2>🚀 Real-World Cybercrime Scenarios <span>that Hackers Don't Want You to Know</span></h2>
+        <p>Interactive learning from global heists &amp; local scams. Hover for glitch effects—fun way to master defense!</p>
+      </div>
+    </section>
     <section class="content-panel">
       <div class="container">
-        <h2>Resources</h2>
-        <ul>
-          <li>Downloadable slides and teaching materials</li>
-          <li>Case studies: MoMo fraud, fake job scams</li>
-          <li>Links to cybersecurity guides and Ghana-specific tips</li>
-          <li>On-demand session recordings and quick-reference instructions</li>
-        </ul>
+        <p>Watch particles dance while you learn. Each card reveals pro tips.</p>
+
+        <article class="linkedin-card animate-item">
+          <div class="scenario-header">
+            <strong>Ghana MoMo Fraud (2023-2026)</strong> - Local Mobile Money Scams
+          </div>
+          <div class="scenario-body">
+            <p>Criminals pose as MTN/Vodafone agents, claiming account issues and requesting OTPs via SMS/calls. Victims lose GHS 500-5000 instantly.</p>
+            <div class="scenario-impact">
+              <strong>Impact:</strong> NCA reports 100k+ cases yearly; traders lose daily revenue.
+            </div>
+            <ul class="lessons-list">
+              <li>Never share OTP—banks never ask.</li>
+              <li>Verify via official app only.</li>
+              <li>Report to 111 immediately.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="linkedin-card animate-item">
+          <div class="scenario-header">
+            <strong>Twitter Bitcoin Scam (2020)</strong> - High-Profile Phishing
+          </div>
+          <div class="scenario-body">
+            <p>Hackers compromised verified accounts (Obama, Musk) to promote BTC giveaway scam. $120k stolen in hours.</p>
+            <div class="scenario-impact">
+              <strong>Impact:</strong> Eroded platform trust; users lost $100-10k each.
+            </div>
+            <ul class="lessons-list">
+              <li>Enable 2FA everywhere.</li>
+              <li>Suspicious links? Check URL manually.</li>
+              <li>"Too good to be true" = scam.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="linkedin-card animate-item">
+          <div class="scenario-header">
+            <strong>Carbanak Gang (2013-2018)</strong> - Banking Trojan Heist
+          </div>
+          <div class="scenario-body">
+            <p>Malware infected bank employee PCs, allowing $1B theft via fake transfers/video manipulation.</p>
+            <div class="scenario-impact">
+              <strong>Impact:</strong> 30+ banks hit; avg $10M loss per target.
+            </div>
+            <ul class="lessons-list">
+              <li>Use antivirus + email filters.</li>
+              <li>Verify large transfers in person.</li>
+              <li>Train staff on phishing.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="linkedin-card animate-item">
+          <div class="scenario-header">
+            <strong>Equifax Breach (2017)</strong> - Data Exposure
+          </div>
+          <div class="scenario-body">
+            <p>Hackers stole 147M personal records (SSN, cards) due to unpatched software.</p>
+            <div class="scenario-impact">
+              <strong>Impact:</strong> $700M fines; identity theft for years.
+            </div>
+            <ul class="lessons-list">
+              <li>Patch software weekly.</li>
+            <li>Freeze credit reports.</li>
+            <li>Monitor accounts daily.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="linkedin-card animate-item">
+          <div class="scenario-header">
+            <strong>Fake Job Scams (Ongoing)</strong> - Trader Targeting
+          </div>
+          <div class="scenario-body">
+            <p>Scammers offer "remote trader jobs" requiring upfront fees or wallet setup via fake sites.</p>
+            <div class="scenario-impact">
+              <strong>Impact:</strong> Ghana traders lose GHS 1000-10k upfront.
+            </div>
+            <ul class="lessons-list">
+              <li>No legit job asks for payment first.</li>
+              <li>Research company on official site.</li>
+              <li>Use reverse image search on "job ads".</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="card" style="text-align: center; margin-top: 30px;">
+          <h3>Download Toolkit</h3>
+          <p>PDF checklists, reporting templates, and more.</p>
+          <a href="reports/Cybercrime-Report-2026.txt" class="btn" download>Download Now</a>
+          <p><a href="contact.html">Report Suspicious Activity</a></p>
+        </div>
       </div>
     </section>
   </main>

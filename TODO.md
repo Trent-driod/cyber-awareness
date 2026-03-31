@@ -1,13 +1,19 @@
-# Task: Add Enoch Okyere Asare image to team.html
+# Cyber Awareness Website Improvement TODO
 
-## Plan Breakdown:
-- Step 1: Insert img tag for Enoch using images/team/enoch.jpeg in his team-card.
-- Step 2: Verify update.
-- Step 3: Commit/push for live deploy.
-- Step 4: Test live site.
+## Task Summary
+- Make website less "dull" (enhance visual appeal in style.css).
+- Update resources.html to LinkedIn-style scenarios with real-world cases.
+- Site-wide polish applied.
 
-## Progress:
-- [x] Step 1: Added Enoch image ✓
-- [x] Step 2: Verified ✓
-- [ ] Step 3
-- [ ] Step 4
+## Completed Steps
+- [x] 1. User approved plan.
+- [x] 2. Updated resources.html (Ghana MoMo, Twitter BTC, Carbanak, Equifax, fake jobs).
+- [x] 3. Enhanced style.css (LinkedIn blues, card hovers).
+
+## Pending Steps
+- [ ] 4. Add resources teaser to index.html.
+- [ ] 5. Test.
+- [ ] 6. Complete.
+
+Updated 2026.
+

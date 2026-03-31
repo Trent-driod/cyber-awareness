@@ -298,12 +298,65 @@ window.addEventListener('load', () => {
   setupScrollAnimations();
 });
 
+  function initParticles() {
+    const canvas = document.createElement('canvas');
+    canvas.id = 'particlesCanvas';
+    canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1;opacity:0.3;';
+    document.body.appendChild(canvas);
+    
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    let particles = [];
+    for (let i = 0; i < 100; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.5,
+        vy: Math.random() * 0.5 + 0.2,
+        size: Math.random() * 2 + 1,
+        color: `hsl(${Math.random()*60 + 180}, 100%, 60%)`
+      });
+    }
+    
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.y > canvas.height) p.y = 0;
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      });
+      requestAnimationFrame(animate);
+    }
+    animate();
+    
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  }
+
+  function addGlitchEffect() {
+    document.querySelectorAll('.linkedin-card').forEach(card => {
+      card.addEventListener('mouseenter', () => card.classList.add('glitch'));
+      card.addEventListener('mouseleave', () => card.classList.remove('glitch'));
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
-  console.log('Cyber Awareness script: DOM loaded');
-  setupPageTransitions();
-  setupDownloadLinks();
-  setupFraudForm();
-  renderFraudReports();
-  setupLightbox();
-  updateScrollProgress();
-});
+    console.log('Cyber Awareness script: DOM loaded');
+    setupPageTransitions();
+    setupDownloadLinks();
+    setupFraudForm();
+    renderFraudReports();
+    setupLightbox();
+    updateScrollProgress();
+    initParticles();
+    addGlitchEffect();
+  });
